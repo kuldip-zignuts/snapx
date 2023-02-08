@@ -1,50 +1,53 @@
 @import './variable';
 @import './config';
 
-header{
+.header{
     background-color: white;
     height: 10vh;
-    
     color: $primary-color;
     
 
-    .navbar-upper{
+    .nvbar{
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin: 0 30px;
         height: 10vh;
         margin-bottom: 0;
-    }
-    .nav-logo img{
-        // width: 30%;
-        height: 5vh;
-       margin-top: 2vh;
-    }
-    .nav-content ul{
-        display: flex;
-        justify-content: space-around;
-        background-color: $primary-color;
-        gap: 20px;
-        list-style-type: none;
-        height: 10vh;
-        align-items: center;
-        margin-top: 0;
-        padding: 10px;
-        margin-bottom: 0;
 
-        a{
-            text-decoration: none;
-            color: white;
+        &-logo img{
+        
+            height: 5vh;
+            margin-top: 2vh;
         }
-       
+        &-content ul{
+            display: flex;
+            justify-content: space-around;
+            background-color: $primary-color;
+            gap: 20px;
+            list-style-type: none;
+            height: 10vh;
+            align-items: center;
+            margin-top: 0;
+            padding: 10px;
+            margin-bottom: 0;
+    
+            a{
+                text-decoration: none;
+                color: white;
+            }
+           
+        }
+        &-login{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid $primary-color;
+            padding: 5px;
+            border-radius: 10px;
+        }
     }
-    .nav-login{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 2px solid $primary-color;
-        padding: 5px;
-        border-radius: 10px;
-    }
+    
+    
+    
 }

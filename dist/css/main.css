@@ -4,12 +4,12 @@
   margin: 0;
 }
 
-header {
+.header {
   background-color: white;
   height: 10vh;
   color: #00bcfc;
 }
-header .navbar-upper {
+.header .nvbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -17,11 +17,11 @@ header .navbar-upper {
   height: 10vh;
   margin-bottom: 0;
 }
-header .nav-logo img {
+.header .nvbar-logo img {
   height: 5vh;
   margin-top: 2vh;
 }
-header .nav-content ul {
+.header .nvbar-content ul {
   display: flex;
   justify-content: space-around;
   background-color: #00bcfc;
@@ -33,11 +33,11 @@ header .nav-content ul {
   padding: 10px;
   margin-bottom: 0;
 }
-header .nav-content ul a {
+.header .nvbar-content ul a {
   text-decoration: none;
   color: white;
 }
-header .nav-login {
+.header .nvbar-login {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,7 +46,7 @@ header .nav-login {
   border-radius: 10px;
 }
 
-main {
+.main {
   height: 100vh;
   margin-top: 0;
   text-align: center;
@@ -54,49 +54,50 @@ main {
   background-size: cover;
   color: white;
 }
-main .container-1 {
+.main .ctnr {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-top: 5em;
 }
-main .container-1 .first-content {
+.main .ctnr-1 {
   padding-bottom: 1em;
 }
-main .container-1 .first-content span {
+.main .ctnr-1 span {
   color: #00bcfc;
 }
-main .container-1 .second-content {
+.main .ctnr-2 {
   text-align: center;
   width: 80%;
   border-top: 1px solid gray;
   padding-top: 1em;
 }
-main .container-1 .third-content {
+.main .ctnr-3 {
   width: 50vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding-top: 3em;
 }
-main .container-1 .third-content img {
+.main .ctnr-3 img {
   height: 30px;
   width: 30px;
 }
-main .container-1 .third-content button {
+.main .ctnr-3 button {
   border: 1px solid white;
   padding: 10px;
   background-color: transparent;
   color: white;
   border-radius: 10px;
-  font-weight: 800;
+  font-weight: 700;
 }
-main .container-1 .third-content .btn-watch {
+.main .ctnr-3 .btn-watch {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  font-weight: 700;
 }
 
 .section {
@@ -107,7 +108,6 @@ main .container-1 .third-content .btn-watch {
 .section img {
   height: 24px;
 }
-
 .section .slidder {
   margin-top: -100px;
   display: flex;
@@ -121,21 +121,26 @@ main .container-1 .third-content .btn-watch {
   border-radius: 10px;
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 .section2 {
   margin: 3rem 0;
 }
-
-.main-div {
+.section2 .main-div {
   margin-top: 3rem;
   display: flex;
   justify-content: space-between;
   margin: 10px 20px;
   align-items: center;
 }
-.main-div .section-clr {
+.section2 .main-div-clr {
   color: #00bcfc;
 }
-.main-div .section-btn button {
+.section2 .main-div-btn button {
   border: 1px solid #00bcfc;
   border-radius: 10px;
   background-color: #00bcfc;
@@ -150,14 +155,14 @@ main .container-1 .third-content .btn-watch {
 }
 .section-3 .section3-card {
   margin: 10px;
-  width: 30%;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   border: 1px solid gray;
   border-radius: 10px;
-  padding: 20px 0;
+  padding: 20px 10px;
 }
 .section-3 .section3-card .upper-content {
   display: flex;
@@ -180,18 +185,18 @@ main .container-1 .third-content .btn-watch {
   width: 25px;
 }
 .section-3 .section3-card .middle-content img {
-  height: 90px;
-  width: 160px;
+  height: 120px;
+  width: 200px;
   border-radius: 15px;
   justify-content: center;
   padding: 10px 10px;
 }
 .section-3 .section3-card .lower-content button {
   border: 1px solid #00bcfc;
-  border-radius: 5px;
-  padding: 15px;
-  width: auto;
-  padding: 2px 2px;
+  padding: 0.1em;
+  border-radius: 10px;
+  color: white;
+  background-color: #00bcfc;
 }
 
 .section-merge {
@@ -261,7 +266,7 @@ main .container-1 .third-content .btn-watch {
 }
 
 .last-section {
-  margin: 10px;
+  margin: 1em;
   text-align: center;
   padding: 1em;
 }
@@ -278,34 +283,49 @@ main .container-1 .third-content .btn-watch {
   font-size: 1.5em;
   color: #00bcfc;
 }
-.last-section .section6 p {
-  font-weight: 600;
-}
 .last-section .pay-cards .users-card img {
   border-bottom: 1px solid gray;
   height: 200px;
   width: 200px;
-  padding: 10px;
-  padding: 0.3em;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
 }
-.last-section .pay-cards .users-card p {
+.last-section .pay-cards .users-card .card-text {
   text-align: center;
-  padding: 0.3em;
+  padding-top: 0.1em;
+  color: #00bcfc;
+}
+.last-section .pay-cards .users-card h3 {
+  color: #00bcfc;
+  padding-bottom: 2em;
 }
 .last-section .pay-cards .users-card h2 {
+  padding-top: 1em;
   color: #00bcfc;
-  padding: 0.3em;
 }
 .last-section .pay-cards .users-card button {
   border: 1px solid #00bcfc;
   padding: 5px;
   color: #00bcfc;
   border-radius: 10px;
-  padding: 0.3em;
+  margin-top: 2em;
 }
 .last-section .pay-cards {
   border: 1px solid gray;
   border-radius: 10px;
   margin: 1em;
   padding: 2em;
+}
+
+.foter {
+  height: 10vh;
+  background-color: #00bcfc;
+  color: white;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.foter span {
+  font-size: 1.3em;
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */

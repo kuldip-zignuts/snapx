@@ -1,0 +1,87 @@
+@import './config';
+
+.section2{
+    margin: 3rem 0;
+    .main-div{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px;
+    align-items: center;
+
+    &-clr{
+        color: $primary-color;
+    }
+    &-btn button{
+        border: 1px solid $primary-color;
+        border-radius: 10px;
+        background-color: $primary-color;
+        color: white;
+        padding: 10px;
+    }
+}
+}
+
+.section-3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    // margin-top:1rem ;
+    // flex-wrap: wrap;
+    .section3-card{
+        
+        margin: 10px;
+        
+        
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        
+        align-items: center;
+        border: 1px solid gray;
+        border-radius: 10px;
+        padding: 20px 10px;
+        
+
+        .upper-content{
+            display: flex;
+            justify-content: space-evenly;
+            gap: 20px;
+            align-items: center;
+
+            .upp-clm .section-clm{
+                font-size: 0.8rem;
+                font-weight: 500;
+            }
+            .upp-clm .upp-alm-clr{
+                color: $primary-color;
+            }
+            .upp-clm .small-text{
+                font-size: 0.5rem;
+            }
+            img{
+                height: 25px;
+                width: 25px;
+            }
+
+        }
+        .middle-content img{
+            height: 140px;
+            width: 220px;
+            border-radius: 15px;
+            justify-content: center;
+            padding: 10px 10px;
+
+            
+
+        }
+        .lower-content button{
+            @include forBtn($primary-color,white);
+            
+           
+
+        }
+    } 
+
+}

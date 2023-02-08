@@ -1,0 +1,76 @@
+@import "./variable";
+
+.section-merge{
+    background-color:#ADD8E6 ;
+
+    .bttn{
+        text-align: center;
+        padding-top: 3em;
+        padding-bottom: 1em;
+        
+        button{
+            border: 1px solid $primary-color;
+            padding: 10px;
+            border-radius: 10px;
+            color: $primary-color;
+        }
+    }
+   
+}
+
+.section-merge .section4{
+    
+    padding-top: 1em;
+    text-align: center;
+    margin-top: 5rem;
+    .sml-size-txt{
+        font-size: 0.7rem;
+        color: $primary-color;
+    }
+    .lrg-cl-text{
+        color: $primary-color;
+    }
+    h4{
+        padding: 20px 00;
+    }
+}
+
+
+.section-merge .section5{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .card-section-5{
+        padding-top: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        .upper-5 img{
+            height: 150px;
+            width: 250px;
+            border-radius:10px ;
+
+        }
+    }
+    .lower-5{
+        margin-top: 0;
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        gap: 10px;
+        
+        width: 100%;
+        .sml-text-5{
+            font-size: 0.5rem;
+        }
+        .lrg-txt-5{
+            font-size: 1rem;
+            font-weight: 500;
+        }
+    }
+
+}
