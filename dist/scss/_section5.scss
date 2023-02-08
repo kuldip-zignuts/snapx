@@ -1,0 +1,65 @@
+@import './variable';
+@import './config';
+.last-section{
+    margin: 1em;
+
+    .combo-card{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap !important;
+        
+       
+        
+    }
+    text-align: center;
+    padding: 1em;
+    .section6 .sml-size-txt{
+        font-size: 1em;
+        color: $primary-color;
+
+    }
+    .section6 .lrg-cl-txt{
+        font-size: 1.5em;
+        color: $primary-color;
+        
+    }
+    
+    .pay-cards .users-card img{
+        border-bottom: 1px solid gray;
+        height: 200px;
+        width: 200px;
+        margin-bottom: 1em;
+        padding-bottom: 1em;
+        
+        
+
+    }
+    .pay-cards .users-card .card-text{
+        text-align: center;
+        padding-top: 0.1em;
+        color: $primary-color;
+        
+    }
+    .pay-cards .users-card h3{
+        color: $primary-color;
+        padding-bottom: 2em;
+        
+    }
+    .pay-cards .users-card h2{
+        padding-top: 1em;
+        color: $primary-color;
+    }
+    .pay-cards .users-card button{
+        @include forBtn(white,$primary-color);
+        margin-top: 2em;
+    }
+    .pay-cards{
+        border: 1px solid gray;
+        border-radius: 10px;
+        margin: 1em;
+        padding: 2em;
+
+    }
+    
+}
