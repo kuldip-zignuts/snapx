@@ -15,6 +15,7 @@ header .navbar-upper {
   justify-content: space-between;
   margin: 0 30px;
   height: 10vh;
+  margin-bottom: 0;
 }
 header .nav-logo img {
   height: 5vh;
@@ -30,6 +31,7 @@ header .nav-content ul {
   align-items: center;
   margin-top: 0;
   padding: 10px;
+  margin-bottom: 0;
 }
 header .nav-content ul a {
   text-decoration: none;
@@ -52,37 +54,37 @@ main {
   background-size: cover;
   color: white;
 }
-main .container {
+main .container-1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-top: 5em;
 }
-main .container .first-content {
+main .container-1 .first-content {
   padding-bottom: 1em;
 }
-main .container .first-content span {
+main .container-1 .first-content span {
   color: #00bcfc;
 }
-main .container .second-content {
+main .container-1 .second-content {
   text-align: center;
   width: 80%;
   border-top: 1px solid gray;
   padding-top: 1em;
 }
-main .container .third-content {
+main .container-1 .third-content {
   width: 50vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding-top: 3em;
 }
-main .container .third-content img {
+main .container-1 .third-content img {
   height: 30px;
   width: 30px;
 }
-main .container .third-content button {
+main .container-1 .third-content button {
   border: 1px solid white;
   padding: 10px;
   background-color: transparent;
@@ -90,13 +92,220 @@ main .container .third-content button {
   border-radius: 10px;
   font-weight: 800;
 }
-main .container .third-content .btn-watch {
+main .container-1 .third-content .btn-watch {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
 
-.container .col img {
-  height: 50px;
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section img {
+  height: 24px;
+}
+
+.section .slidder {
+  margin-top: -100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+.section .slidder .sl-img img {
+  height: 200px;
+  width: 225px;
+  border-radius: 10px;
+}
+
+.section2 {
+  margin: 3rem 0;
+}
+
+.main-div {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px;
+  align-items: center;
+}
+.main-div .section-clr {
+  color: #00bcfc;
+}
+.main-div .section-btn button {
+  border: 1px solid #00bcfc;
+  border-radius: 10px;
+  background-color: #00bcfc;
+  color: white;
+  padding: 10px;
+}
+
+.section-3 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.section-3 .section3-card {
+  margin: 10px;
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 20px 0;
+}
+.section-3 .section3-card .upper-content {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  align-items: center;
+}
+.section-3 .section3-card .upper-content .upp-clm .section-clm {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.section-3 .section3-card .upper-content .upp-clm .upp-alm-clr {
+  color: #00bcfc;
+}
+.section-3 .section3-card .upper-content .upp-clm .small-text {
+  font-size: 0.5rem;
+}
+.section-3 .section3-card .upper-content img {
+  height: 25px;
+  width: 25px;
+}
+.section-3 .section3-card .middle-content img {
+  height: 90px;
+  width: 160px;
+  border-radius: 15px;
+  justify-content: center;
+  padding: 10px 10px;
+}
+.section-3 .section3-card .lower-content button {
+  border: 1px solid #00bcfc;
+  border-radius: 5px;
+  padding: 15px;
+  width: auto;
+  padding: 2px 2px;
+}
+
+.section-merge {
+  background-color: #ADD8E6;
+}
+.section-merge .bttn {
+  text-align: center;
+  padding-top: 3em;
+  padding-bottom: 1em;
+}
+.section-merge .bttn button {
+  border: 1px solid #00bcfc;
+  padding: 10px;
+  border-radius: 10px;
+  color: #00bcfc;
+}
+
+.section-merge .section4 {
+  padding-top: 1em;
+  text-align: center;
+  margin-top: 5rem;
+}
+.section-merge .section4 .sml-size-txt {
+  font-size: 0.7rem;
+  color: #00bcfc;
+}
+.section-merge .section4 .lrg-cl-text {
+  color: #00bcfc;
+}
+.section-merge .section4 h4 {
+  padding: 20px 0;
+}
+
+.section-merge .section5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.section-merge .section5 .card-section-5 {
+  padding-top: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.section-merge .section5 .card-section-5 .upper-5 img {
+  height: 150px;
+  width: 250px;
+  border-radius: 10px;
+}
+.section-merge .section5 .lower-5 {
+  margin-top: 0;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 10px;
+  width: 100%;
+}
+.section-merge .section5 .lower-5 .sml-text-5 {
+  font-size: 0.5rem;
+}
+.section-merge .section5 .lower-5 .lrg-txt-5 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.last-section {
+  margin: 10px;
+  text-align: center;
+  padding: 1em;
+}
+.last-section .combo-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.last-section .section6 .sml-size-txt {
+  font-size: 1em;
+  color: #00bcfc;
+}
+.last-section .section6 .lrg-cl-txt {
+  font-size: 1.5em;
+  color: #00bcfc;
+}
+.last-section .section6 p {
+  font-weight: 600;
+}
+.last-section .pay-cards .users-card img {
+  border-bottom: 1px solid gray;
+  height: 200px;
+  width: 200px;
+  padding: 10px;
+  padding: 0.3em;
+}
+.last-section .pay-cards .users-card p {
+  text-align: center;
+  padding: 0.3em;
+}
+.last-section .pay-cards .users-card h2 {
+  color: #00bcfc;
+  padding: 0.3em;
+}
+.last-section .pay-cards .users-card button {
+  border: 1px solid #00bcfc;
+  padding: 5px;
+  color: #00bcfc;
+  border-radius: 10px;
+  padding: 0.3em;
+}
+.last-section .pay-cards {
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin: 1em;
+  padding: 2em;
 }/*# sourceMappingURL=main.css.map */
