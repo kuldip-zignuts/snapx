@@ -21,6 +21,7 @@
         
     }
     .section5{
+
         
         .card-section-5{
 
@@ -43,8 +44,15 @@
                 font-weight: map-get($map: $font-weight ,  $key: bold );
             }
         }
+        @media (max-width:320px) {
+            .card-section-5 img{
+                width: 225px !important;
+            }
+            
+        }
     
     }
+    
    
 }
 

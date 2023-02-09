@@ -214,6 +214,11 @@
   font-size: 1rem;
   font-weight: 700;
 }
+@media (max-width: 320px) {
+  .section-merge .section5 .card-section-5 img {
+    width: 225px !important;
+  }
+}
 
 * {
   box-sizing: border-box;
@@ -221,17 +226,6 @@
   margin: 0;
 }
 
-.last-section {
-  margin: 1em;
-  text-align: center;
-  padding: 1em;
-}
-.last-section .combo-card {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap !important;
-}
 .last-section .section6 .sml-size-txt {
   font-size: 1em;
   color: #00bcfc;
@@ -245,8 +239,8 @@
 }
 .last-section .pay-cards .users-card img {
   border-bottom: 1px solid gray;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   margin-bottom: 1em;
   padding-bottom: 1em;
 }

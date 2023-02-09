@@ -1,19 +1,10 @@
 @import './variable';
 @import './config';
-.last-section{
-    margin: 1em;
 
-    .combo-card{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-wrap: wrap !important;
-        
-       
-        
-    }
-    text-align: center;
-    padding: 1em;
+.last-section{
+    
+    
+    
     .section6 .sml-size-txt{
         font-size: 1em;
         color: $primary-color;
@@ -29,8 +20,8 @@
     }
     .pay-cards .users-card img{
         border-bottom: 1px solid gray;
-        height: 200px;
-        width: 200px;
+        height: 150px;
+        width: 150px;
         margin-bottom: 1em;
         padding-bottom: 1em;
         
