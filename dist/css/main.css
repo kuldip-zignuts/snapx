@@ -234,42 +234,37 @@
   font-size: 1.5em;
   color: #00bcfc;
 }
-.last-section .pay-cards .users-card {
+.last-section .users-card {
   padding: 0.5rem 4rem;
+  border: 1px solid gray;
 }
-.last-section .pay-cards .users-card img {
+.last-section .users-card img {
   border-bottom: 1px solid gray;
   height: 150px;
   width: 150px;
   margin-bottom: 1em;
   padding-bottom: 1em;
 }
-.last-section .pay-cards .users-card .card-text {
+.last-section .users-card .card-text {
   text-align: center;
   padding-top: 0.1em;
   color: #00bcfc;
 }
-.last-section .pay-cards .users-card h3 {
+.last-section .users-card h3 {
   color: #00bcfc;
   padding-bottom: 2em;
 }
-.last-section .pay-cards .users-card h2 {
+.last-section .users-card h2 {
   padding-top: 1em;
   color: #00bcfc;
 }
-.last-section .pay-cards .users-card button {
+.last-section .users-card button {
   border: 1px solid #00bcfc;
   padding: 0.3em;
   border-radius: 10px;
   color: #00bcfc;
   background-color: white;
   margin-top: 2em;
-}
-.last-section .pay-cards {
-  border: 1px solid gray;
-  border-radius: 10px;
-  margin: 1em;
-  padding: 2em;
 }
 
 .bg-blue {
