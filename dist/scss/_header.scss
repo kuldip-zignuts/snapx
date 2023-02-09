@@ -2,51 +2,30 @@
 @import './config';
 
 .header{
-    background-color: white;
+    
     color: $primary-color;
     
 
-    .nvbar{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 0 30px;
-        
-        margin-bottom: 0;
-
-        &-logo img{
-        
-            height: 5vh;
-            margin: 12px;
-        }
-        &-content ul{
-            display: flex;
-            justify-content: space-around;
-            background-color: $primary-color;
-            gap: 20px;
-            list-style-type: none;
-           
-            align-items: center;
-            margin-top: 0;
-            padding: 21px 41px;
-            margin-bottom: 0;
-    
-            a{
-                text-decoration: none;
-                color: white;
-            }
-           
-        }
-        &-login{
+   
+        .nvbar-login button{
             display: flex;
             align-items: center;
             justify-content: center;
             border: 2px solid $primary-color;
             padding: 5px;
             border-radius: 10px;
+            color: $primary-color !important;
+           
+        }
+        @media (max-width:576px){
+            .ul-media{
+                width: 100% !important;
+                text-align: center;
+    
+            }
+            .btn-media{
+                margin: 1em auto;
+            }
         }
     }
     
-    
-    
-}

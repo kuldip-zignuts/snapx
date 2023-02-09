@@ -5,61 +5,32 @@
 }
 
 .header {
-  background-color: white;
   color: #00bcfc;
 }
-.header .nvbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 30px;
-  margin-bottom: 0;
-}
-.header .nvbar-logo img {
-  height: 5vh;
-  margin: 12px;
-}
-.header .nvbar-content ul {
-  display: flex;
-  justify-content: space-around;
-  background-color: #00bcfc;
-  gap: 20px;
-  list-style-type: none;
-  align-items: center;
-  margin-top: 0;
-  padding: 21px 41px;
-  margin-bottom: 0;
-}
-.header .nvbar-content ul a {
-  text-decoration: none;
-  color: white;
-}
-.header .nvbar-login {
+.header .nvbar-login button {
   display: flex;
   align-items: center;
   justify-content: center;
   border: 2px solid #00bcfc;
   padding: 5px;
   border-radius: 10px;
+  color: #00bcfc !important;
+}
+@media (max-width: 576px) {
+  .header .ul-media {
+    width: 100% !important;
+    text-align: center;
+  }
+  .header .btn-media {
+    margin: 1em auto;
+  }
 }
 
 .main {
   height: 80vh;
-  margin-top: 0;
-  text-align: center;
   background-image: url("../assets/ocean.webp");
   background-size: cover;
   color: white;
-}
-.main .ctnr {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 5em;
-}
-.main .ctnr-1 {
-  padding-bottom: 1em;
 }
 .main .ctnr-1 span {
   color: #00bcfc;
@@ -71,9 +42,6 @@
   padding-top: 1em 0;
 }
 .main .ctnr-3 {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   gap: 1em;
 }
 .main .ctnr-3 img {
@@ -329,66 +297,10 @@
   padding: 2em;
 }
 
-@media (max-width: 872px) {
-  .box-3 {
-    display: none;
-  }
+.bg-blue {
+  background-color: #00bcfc !important;
 }
-@media (max-width: 670px) {
-  .nvbar {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    gap: 20px;
-    margin: 0;
-  }
-  .ctnr {
-    margin-top: 100px;
-  }
-  .box-2 {
-    display: none;
-  }
-  .main {
-    height: 100vh;
-  }
-  .ctnr-3 {
-    display: flex;
-    flex-direction: column;
-  }
-  .b2 {
-    margin: 10px 10px;
-  }
-}
-@media (max-width: 475px) {
-  .nvbar-content ul {
-    display: flex;
-    flex-direction: column;
-  }
-  .nvbar-content {
-    width: 100%;
-  }
-  .nvbar {
-    gap: 20px;
-  }
-  .main {
-    height: 105vh;
-  }
-  .main-div {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-  }
-  .ctnr-2-p {
-    font-size: 0.8rem;
-  }
-  .ctnr-1-h1 {
-    font-size: 1.2rem;
-  }
-  .users-card {
-    padding: 0rem 0rem !important;
-  }
-}
+
 .foter {
   background-color: #00bcfc;
   color: white;
