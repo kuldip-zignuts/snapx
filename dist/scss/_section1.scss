@@ -14,36 +14,26 @@
             
         }
         &-2{
-            text-align: center;
+           
             width: 80%;
-            border-top: 1px solid gray;
-            padding-top: 1em 00;
-            
-            
+            border-top: 1px solid gray;   
         }
         &-3{
-            
-            
+         
             gap: 1em;
             
-
             img{
                 height: 30px;
-                width: 30px;
-                
+                width: 30px;        
             }
             button{
                 border: 1px solid white;
-                padding: 10px;
                 background-color: transparent;
                 color: white;
                 border-radius: 10px;
                 font-weight: map-get($map: $font-weight, $key: bold );
             }
             .btn-watch{
-                display: flex;
-                justify-content: center;
-                align-items: center;
                 gap: 10px;
                 font-weight: map-get($map: $font-weight, $key: bold );
             }
@@ -52,4 +42,18 @@
     }
    
 
+}
+@media (max-width:600px){
+    .ctnr-1-h1{
+        font-size: 1.5rem;
+    }
+    .ctnr-2-p{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width:400px){
+    .ctnr-3{
+        display: flex;
+        flex-direction: column;
+    }
 }

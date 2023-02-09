@@ -8,24 +8,20 @@
   color: #00bcfc;
 }
 .header .nvbar-login button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border: 2px solid #00bcfc;
-  padding: 5px;
   border-radius: 10px;
   color: #00bcfc !important;
 }
+
 @media (max-width: 576px) {
-  .header .ul-media {
+  .ul-media {
     width: 100% !important;
     text-align: center;
   }
-  .header .btn-media {
+  .btn-media {
     margin: 1em auto;
   }
 }
-
 .main {
   height: 80vh;
   background-image: url("../assets/ocean.webp");
@@ -36,10 +32,8 @@
   color: #00bcfc;
 }
 .main .ctnr-2 {
-  text-align: center;
   width: 80%;
   border-top: 1px solid gray;
-  padding-top: 1em 0;
 }
 .main .ctnr-3 {
   gap: 1em;
@@ -50,20 +44,30 @@
 }
 .main .ctnr-3 button {
   border: 1px solid white;
-  padding: 10px;
   background-color: transparent;
   color: white;
   border-radius: 10px;
   font-weight: 700;
 }
 .main .ctnr-3 .btn-watch {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 10px;
   font-weight: 700;
 }
 
+@media (max-width: 600px) {
+  .ctnr-1-h1 {
+    font-size: 1.5rem;
+  }
+  .ctnr-2-p {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 400px) {
+  .ctnr-3 {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .section {
   display: flex;
   align-items: center;
@@ -83,6 +87,16 @@
   height: 200px;
   width: 225px;
   border-radius: 10px;
+}
+@media (max-width: 860px) {
+  .section .box-3 {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .section .box-2 {
+    display: none;
+  }
 }
 
 * {

@@ -5,27 +5,23 @@
     
     color: $primary-color;
     
-
-   
         .nvbar-login button{
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            
             border: 2px solid $primary-color;
-            padding: 5px;
             border-radius: 10px;
             color: $primary-color !important;
            
         }
-        @media (max-width:576px){
-            .ul-media{
-                width: 100% !important;
-                text-align: center;
-    
-            }
-            .btn-media{
-                margin: 1em auto;
-            }
+        
+    }
+    @media (max-width:576px){
+        .ul-media{
+            width: 100% !important;
+            text-align: center;
+
+        }
+        .btn-media{
+            margin: 1em auto;
         }
     }
     
